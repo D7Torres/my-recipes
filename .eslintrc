@@ -1,0 +1,29 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "rules": {
+      "import/no-unresolved": "off",
+      "max-len": "off",
+      "no-shadow": ["error", { "allow": ["resolve", "reject", "done", "cb", "e", "err", "error", "mapStateToProps"] }],
+      "no-underscore-dangle": ["error", { "allow": [__initialState__] }],
+      "new-cap": 0,
+      "newline-before-return": "error"
+    },
+    "env" : {
+      "jasmine": true
+    },
+    "globals": {
+      "require": false,
+      "__DEV__": false,
+      "__PROD__": false,
+      "__HMR__": false,
+      "__SERVER__": false,
+      "__CLIENT__": false,
+      "__ENV__": false,
+      "__DOMAIN__": false,
+      "__CLIENT_PROTOCOL__": false,
+      "__CLOUDFRONT_URL__": false,
+      "__TEST__": false,
+      "__GIT_HASH__": false
+    }
+}
